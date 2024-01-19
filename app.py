@@ -3,14 +3,11 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel, PeftConfig
 import re
 
-def initialize_session_state():
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
-
 st.set_page_config(page_title="My Llama2 Chatbot")
 
-# 세션 상태 초기화 호출
-initialize_session_state()
+# 세션 상태에 대화 이력을 저장할 리스트 초기화
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
 st.title(":koala: Llama2 Chatbot")
 st.title(':blue_book: 파이썬 코드를 알려드릴게요.')
@@ -58,7 +55,7 @@ def gen(x):
             q,
             return_tensors='pt',
             return_token_type_ids=False
-        ), 
+        ),
         max_new_tokens=200,
         early_stopping=True,
         do_sample=False,
@@ -68,15 +65,31 @@ def gen(x):
 # 사용자 입력 받기
 user_input = st.chat_input("질문을 입력하세요:")
 
-# 사용자가 입력한 경우 응답 생성
+# 사용자가 입력한 경우
 if user_input:
-    with st.spinner("Generating response..."):
+    # 먼저 사용자의 질문을 채팅 창에 표시
+    st.session_state.messages.append({"role": "user", "content": user_input})
+
+    # 대화 이력 표시 (사용자 질문 포함)
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"], avatar="🐨" if message["role"] == "chatbot" else None):
+            st.write(message["content"])
+
+    # 응답 생성 시작 전 "답변중이에요.." 메시지 표시
+    with st.spinner("답변중이에요.."):
+        # 응답 생성
         response = gen(user_input)
         response = re.sub(r'</?s>', '', response)
-        st.session_state.messages.append({"role": "user", "content": user_input})
+
+        # 생성된 응답을 세션 상태에 추가
         st.session_state.messages.append({"role": "chatbot", "content": response})
 
-# 대화 이력 표시
-for message in st.session_state.messages:
-    with st.chat_message(message["role"], avatar="🤖" if message["role"] == "chatbot" else None):
-        st.write(message["content"])
+    # 스크립트를 다시 실행하여 화면 갱신
+    st.experimental_rerun()
+
+# 세션 상태에 저장된 이전 메시지들 표시
+# (이 부분은 사용자 입력이 없을 때에만 실행됨)
+if not user_input:
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"], avatar="🐨" if message["role"] == "chatbot" else None):
+            st.write(message["content"])
