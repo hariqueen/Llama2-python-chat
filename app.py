@@ -22,23 +22,29 @@ st.title(':blue_book: 파이썬 코드를 알려드릴게요.')
 st.sidebar.title("질문 이력 :book:")
 st.sidebar.write("---")
 
-if st.sidebar.button("새로운 질문하기➕"):
-    if st.session_state.chat_history:
-        st.session_state.full_history.append(st.session_state.chat_history.copy())
-    st.session_state.chat_history = []
-    # 첫 번째 사용자 질문 유지
-    if st.session_state.sidebar_history and st.session_state.sidebar_history[0]["role"] == "user":
-        first_user_question = st.session_state.sidebar_history[0]
-        st.session_state.sidebar_history = [first_user_question]
-    else:
-        st.session_state.sidebar_history = []
 
-# 사이드바의 첫 번째 질문 표시 및 이력 복구
-with st.sidebar:
-    if st.session_state.sidebar_history:
-        first_question = st.session_state.sidebar_history[0]
-        if first_question["role"] != "placeholder" and st.sidebar.button(first_question['content']):
-            st.session_state.chat_history = st.session_state.full_history[-1].copy()
+# "새로운 질문하기" 버튼 로직
+if st.sidebar.button("새로운 질문하기➕"):
+    # 현재 대화 이력이 존재하면 처리
+    if st.session_state.chat_history:
+        # 첫 번째 사용자 질문 찾기
+        first_user_question = next((msg for msg in st.session_state.chat_history if msg["role"] == "user"), None)
+        if first_user_question:
+            # 사이드바 이력에 첫 번째 사용자 질문 추가
+            st.session_state.sidebar_history.append(first_user_question)
+        # 현재 대화 이력을 full_history에 저장
+        st.session_state.full_history.append(st.session_state.chat_history.copy())
+    else:
+        # 새 세션 시작 시 빈 이력 추가
+        st.session_state.full_history.append([])
+    # 새로운 세션 시작
+    st.session_state.chat_history = []
+
+# 사이드바의 질문 이력 표시 및 복구
+for idx, question in enumerate(st.session_state.sidebar_history):
+    if st.sidebar.button(f"세션 {idx + 1}: {question['content']}"):
+        # 선택된 세션의 대화 이력 로드
+        st.session_state.chat_history = st.session_state.full_history[idx]
 
 
 # BitsAndBytesConfig 설정
@@ -95,12 +101,6 @@ user_input = st.chat_input("질문은 여기에 입력해 주세요.")
 if user_input:
     new_message = {"role": "user", "content": user_input}
     st.session_state.chat_history.append(new_message)
-
-    # sidebar_history에 요소가 있고 첫 번째 요소가 플레이스홀더인 경우 업데이트
-    if st.session_state.sidebar_history and st.session_state.sidebar_history[0]["role"] == "placeholder":
-        st.session_state.sidebar_history[0] = new_message
-    elif not st.session_state.sidebar_history:
-        st.session_state.sidebar_history.append(new_message)
 
     # 대화 이력 표시 (사용자 질문 포함)
     for message in st.session_state.chat_history:
