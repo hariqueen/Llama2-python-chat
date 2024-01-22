@@ -13,6 +13,8 @@ if "sidebar_history" not in st.session_state:
     st.session_state.sidebar_history = []
 if "full_history" not in st.session_state:
     st.session_state.full_history = []
+if "session_active" not in st.session_state:
+    st.session_state.session_active = False
 
 st.title(":koala: Llama2 Chatbot")
 st.title(':blue_book: 파이썬 코드를 알려드릴게요.')
@@ -21,12 +23,10 @@ st.title(':blue_book: 파이썬 코드를 알려드릴게요.')
 ##### 사이드바 #######
 st.sidebar.title("질문 이력 :book:")
 st.sidebar.write("---")
-
-
 # "새로운 질문하기" 버튼 로직
 if st.sidebar.button("새로운 질문하기➕"):
-    # 현재 대화 이력이 존재하면 처리
-    if st.session_state.chat_history:
+    # 현재 대화 이력이 존재하고, 세션이 복원된 상태가 아닌 경우 처리
+    if st.session_state.chat_history and not st.session_state.get('restored_session', False):
         # 첫 번째 사용자 질문 찾기
         first_user_question = next((msg for msg in st.session_state.chat_history if msg["role"] == "user"), None)
         if first_user_question:
@@ -34,18 +34,18 @@ if st.sidebar.button("새로운 질문하기➕"):
             st.session_state.sidebar_history.append(first_user_question)
         # 현재 대화 이력을 full_history에 저장
         st.session_state.full_history.append(st.session_state.chat_history.copy())
-    else:
-        # 새 세션 시작 시 빈 이력 추가
-        st.session_state.full_history.append([])
     # 새로운 세션 시작
     st.session_state.chat_history = []
+    # 세션이 복원된 상태를 False로 설정
+    st.session_state.restored_session = False
 
 # 사이드바의 질문 이력 표시 및 복구
 for idx, question in enumerate(st.session_state.sidebar_history):
-    if st.sidebar.button(f"세션 {idx + 1}: {question['content']}"):
+    if st.sidebar.button(f"{idx + 1}. {question['content']}"):
         # 선택된 세션의 대화 이력 로드
         st.session_state.chat_history = st.session_state.full_history[idx]
-
+        # 세션이 복원된 상태를 True로 설정
+        st.session_state.restored_session = True
 
 # BitsAndBytesConfig 설정
 bnb_config = BitsAndBytesConfig(
@@ -87,7 +87,7 @@ def gen(x):
             q,
             return_tensors='pt',
             return_token_type_ids=False
-        ),
+        ).to('cuda'),
         max_new_tokens=200,
         early_stopping=True,
         do_sample=False,
