@@ -212,7 +212,7 @@ if user_input:
             response = gen(user_input)
             response = re.sub(r'</?s>', '', response)
 
-    # db_connect()
+    db_connect()
 
     new_response = {"role": "chatbot", "content": response}
     st.session_state.chat_history.append(new_response)
