@@ -10,47 +10,25 @@
 2024.01.11 - 2024.01.29
 
 
-### 🧑🏻‍💻멤버 구성
-<table>
-  <tr>
-    <td height="140px" align="center"> <a href="https://github.com/hariqueen"><img src="https://avatars.githubusercontent.com/u/130454750?v=4" width="140px" /><br/></a></td>
-    <td height="140px" align="center"> <a href="https://github.com/GaYeon-Alice"><img src="https://avatars.githubusercontent.com/u/146514128?v=4" width="140px" /><br/></a></td>
-    <td height="140px" align="center"> <a href="https://github.com/"><img src="https://avatars.githubusercontent.com/u/146901199?v=4" width="140px" /><br/></a></td>
-    <td height="140px" align="center"> <a href="https://github.com/"><img src="https://avatars.githubusercontent.com/u/145965047?v=4" width="140px" /><br/></a></td>
-    <td height="140px" align="center"> <a href="https://github.com/yewchung56"><img src="https://avatars.githubusercontent.com/u/62236700?s=460&v=4" width="140px" /><br/></a></td>
-  </tr>
-  <tr>
-      <td align="center">🐨김하리</td>
-      <td align="center">🐨강가연</td>
-      <td align="center">🐨김다은</td>
-      <td align="center">🐨신다인</td>
-      <td align="center">🐨양지원</td>
-  </tr>
-  <tr>
-      <td align="center">빅데이터5기<br/>역할<br/></td>
-      <td align="center">빅데이터5기<br/>역할<br/></td>
-      <td align="center">빅데이터5기<br/>역할<br/></td>
-      <td align="center">빅데이터5기<br/>역할<br/></td>
-      <td align="center">빅데이터5기<br/>역할<br/></td>
-  </tr>
-</table>
-<br/>
+## 🧑🏻‍💻팀원 소개 및 R&R
+
+<img width="883" alt="스크린샷 2024-01-31 오후 2 17 31" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/a41cfec6-6883-495f-b491-1eefcf81fe9d">
 
 
-### ⚙️개발 환경
+## ⚙️개발 환경
  
 `Node.js 16.13.1`  
  
 <br/>
 
-### 📝요구 사항 정의
+## 📝요구 사항 정의
 <img src="https://" width="800px"/>
 <br/>
 
-### 🛠️시스템 구성도
+## 🛠️시스템 구성도
 <img src="https://" width="800px"/>
 <br/>
 
-### 🎬실행 화면
+## 🎬실행 화면
 <img src="https://" width="800px"/>
 <br/>
