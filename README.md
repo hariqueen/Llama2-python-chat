@@ -1,5 +1,7 @@
-# 🐨COALA
-천재교육 빅데이터 5기 코알라 팀
+# 🐨COALA | WEB
+## 천재교육 빅데이터 5기 COCO 팀 </br>
+<img width="750" alt="스크린샷 2024-01-31 오후 4 30 53" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/4435022b-4a40-459f-8335-25fb1b2b46d5">
+
 
 
 ## 🤖 프로젝트 소개
@@ -17,7 +19,7 @@
 
 ## ⚙️개발 환경
 ### ✔️언어 및 라이브러리
-<img src="https://img.shields.io/badge/Torch-2.1.2-EE4C2C0?style=for-the-badge&logo=pytorch&logoColor=#EE4C2C0"> <img src="https://img.shields.io/badge/Python-3.10.12/3.11.5-3776AB?style=for-the-badge&logo=Python&logoColor=#3776AB"> <img src="https://img.shields.io/badge/Streamlit-1.30.0-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=#FF4B4B">
+<img src="https://img.shields.io/badge/Torch-2.1.2-EE4C2C?style=for-the-badge&logo=Pytorch&logoColor=#EE4C2C"> <img src="https://img.shields.io/badge/Python-3.10.12/3.11.5-3776AB?style=for-the-badge&logo=Python&logoColor=#3776AB"> <img src="https://img.shields.io/badge/Streamlit-1.30.0-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=#FF4B4B">
 ### ✔️개발 도구
 #### 통합 개발 환경 (IDE)
 <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> 
@@ -30,11 +32,11 @@
  
 <br/>
 
-## 📝요구 사항 정의
-<img src="https://" width="800px"/>
+# 📝 사용자 매뉴얼
+[![Video Label](http://img.youtube.com/vi/EB6ShnX2JtQ/0.jpg)](https://youtu.be/EB6ShnX2JtQ)
 <br/>
 
-## 🛠️시스템 구성도
+## 🛠️기능
 <img src="https://" width="800px"/>
 
 <br/>
