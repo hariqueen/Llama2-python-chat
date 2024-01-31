@@ -42,7 +42,7 @@
 
 <br/>
 
-## 🎬실행 화면 (섬네일 클릭 시 영상 재생)
+## 🎬실행 화면 (썸네일 클릭 시 영상 재생)
 
 [![Video Label](http://img.youtube.com/vi/EB6ShnX2JtQ/0.jpg)](https://youtu.be/EB6ShnX2JtQ)
 <br/>
