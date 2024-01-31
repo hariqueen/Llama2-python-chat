@@ -20,8 +20,10 @@
 이를 통해 플랫폼 사용자 경험을 풍부하게 하고 교육 콘텐츠의 질을 높이는 데 목표를 두고 있습니다. </br>
 
 ## 🛠️기능
-<img src="https://" width="800px"/>
-
+KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정을 구현하였다. </br>
+1. 사용자의 질문이 파이썬과 연관된 것인지를 KoBERT 모델이 판단한다.
+2. 파이썬과 무관한 질문이면 예외 처리 답변 10개 중 랜덤으로 하나가 반환된다.
+3. 파이썬에 관한 질문이면 CodeLlama 모델을 이용하여 답변을 한다.
 <br/>
 
 
@@ -49,8 +51,9 @@
 <br/>
 
 # 📝 사용자 매뉴얼
-<img src="https://" width="800px"/>
-<img width="858" alt="스크린샷 2024-01-31 오후 3 05 14" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/542b25e6-7a8b-4851-947e-10d8846ec360">
+<img width="308" height="208" alt="스크린샷 2024-01-31 오후 7 13 18" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/b374e356-6b2c-4e8d-bd34-42b1ebf728f0"> <img width="307" height="208" alt="스크린샷 2024-01-31 오후 7 14 16" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/48c025fd-c0ce-432a-b88c-3956371996ea"> <img width="307" height="208" alt="스크린샷 2024-01-31 오후 7 16 39" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/8139a3a5-434a-4683-abe7-7796158a13ca"> <img width="307" height="208" alt="스크린샷 2024-01-31 오후 7 17 11" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/88dbbd4e-f497-4427-ab8e-1f22cf4ac8d6"> <img width="307" height="208" alt="스크린샷 2024-01-31 오후 7 18 00" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/58b48b67-d475-4b0e-960e-9e9f1ae682c1">
+
+
 <br/>
 
 ## 🎬실행 화면 (썸네일 클릭 시 영상 재생)
