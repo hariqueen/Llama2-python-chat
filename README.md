@@ -17,15 +17,14 @@
 
 ## ⚙️개발 환경
 ### ✔️언어 및 라이브러리
-![Torch-2.1.2](https://img.shields.io/badge/Torch-2.1.2-red.svg) </br> 
-![Python-3.10.12](https://img.shields.io/badge/Python-3.10.12-orange.svg) ![Python-3.11.5](https://img.shields.io/badge/Python-3.11.5-orange.svg) </br>
-![Streamlit-1.30.0](https://img.shields.io/badge/Streamlit-1.30.0-yellow.svg)
-### ✔️통합 개발 환경 (IDE)
-<img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black"> 
-### ✔️버전 관리
-`Hugging Face`
-### ✔️Back-end
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=green"><img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=yellow">
+<img src="https://img.shields.io/badge/Torch-2.1.2-EE4C2C0?style=for-the-badge&logo=pytorch&logoColor=#EE4C2C0"> <img src="https://img.shields.io/badge/Python-3.10.12/3.11.5-3776AB?style=for-the-badge&logo=Python&logoColor=#3776AB"> <img src="https://img.shields.io/badge/Streamlit-1.30.0-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=#FF4B4B">
+### ✔️개발 도구
+#### 통합 개발 환경 (IDE)
+<img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> 
+#### 버전 관리
+<img src="https://img.shields.io/badge/Hugging Face-yellow?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+#### 운영체제
+<img src="https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=Ubuntu&logoColor=#E95420"> <img src="https://img.shields.io/badge/windows 11-0078D4?style=for-the-badge&logo=windows11&logoColor=#0078D4"> 
 
 
  
