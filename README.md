@@ -1,11 +1,15 @@
-# 🐨COALA | WEB| ML| LLM
+# 🐨COALA 
+# WEB | ML | LLM
 ## 천재교육 빅데이터 5기 COCO 팀 </br>
-<img width="750" alt="스크린샷 2024-01-31 오후 4 30 53" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/4435022b-4a40-459f-8335-25fb1b2b46d5">
+<img width="743" alt="스크린샷 2024-01-31 오후 4 48 29" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/2fea35f8-172a-46b4-bfbc-eea20d9ce966">
 
 
 
 ## 🤖 프로젝트 소개
-교육용 코딩 챗봇 구현
+교육 플랫폼 시장의 다양한 파이썬 교육 콘텐츠 생성과 소비. </br>
+그러나 사용자들은 학습 질문에 대한 실시간 답변 및 강사의 부재로 추가 질문에 대한 어려움을 느끼고 있다. </br>
+사용자가 느끼는 불편함을 해소하고 교육 플랫폼 시장에서 경쟁력을 강화하고자  '코알라(COALA)'라는 파이썬 기초 AI 챗봇을 개발하기로 하였다. '코알라'는 '코드를 알려주는 라마(Code-Assisting LLaMA)'의 줄임말로, 'coding'의 'C'를 조합하여 COALA라는 서비스명을 기획 하였다. ‘코알라’는 사용자들이 파이썬에 대해 궁금한 점을 쉽고 빠르게 해결할 수 있도록 도와주며, 이를 통해 플랫폼 사용자 경험을 풍부하게 하고 교육 콘텐츠의 질을 높이는 데 기여할 것이다. ‘코알라’의 도입은 다음과 같은 단기적, 장기적 목표를 실현하기 위함이다.
+
 
 
 ## 🕒개발 기간
@@ -25,8 +29,18 @@
 <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> 
 #### 버전 관리
 <img src="https://img.shields.io/badge/Hugging Face-yellow?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-#### 운영체제
+### ✔️운영체제
 <img src="https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=Ubuntu&logoColor=#E95420"> <img src="https://img.shields.io/badge/windows 11-0078D4?style=for-the-badge&logo=windows11&logoColor=#0078D4"> 
+## ⚙️모델 파인튜닝 및 훈련 (Model Fine-tuning & training)
+### ✔️Code Llama 모델
+`Code Llama (TinyPixel/CodeLlama-7B-Python-bf16-sharded)`
+### ✔️KoBERT 모델
+`Kobert (SKT/KoBERT-base-v1)`
+### ✔️라이브러리
+`Hugging Face Transformers`, `Tokenizer`, `autotrain-advanced`
+## ⚙️데이터베이스
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
+
 
 
  
