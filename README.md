@@ -33,7 +33,8 @@
 <br/>
 
 # 📝 사용자 매뉴얼
-[![Video Label](http://img.youtube.com/vi/EB6ShnX2JtQ/0.jpg)](https://youtu.be/EB6ShnX2JtQ)
+<img src="https://" width="800px"/>
+<img width="858" alt="스크린샷 2024-01-31 오후 3 05 14" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/542b25e6-7a8b-4851-947e-10d8846ec360">
 <br/>
 
 ## 🛠️기능
@@ -42,7 +43,6 @@
 <br/>
 
 ## 🎬실행 화면
-<img src="https://" width="800px"/>
-<img width="858" alt="스크린샷 2024-01-31 오후 3 05 14" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/542b25e6-7a8b-4851-947e-10d8846ec360">
 
+[![Video Label](http://img.youtube.com/vi/EB6ShnX2JtQ/0.jpg)](https://youtu.be/EB6ShnX2JtQ)
 <br/>
