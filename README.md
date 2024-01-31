@@ -1,4 +1,4 @@
-# 🐨COALA |WEB|ML|LLM
+# 🐨COALA | WEB| ML| LLM
 ## 천재교육 빅데이터 5기 COCO 팀 </br>
 <img width="750" alt="스크린샷 2024-01-31 오후 4 30 53" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/4435022b-4a40-459f-8335-25fb1b2b46d5">
 
