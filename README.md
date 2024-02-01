@@ -5,11 +5,12 @@
 ## 천재교육 빅데이터 5기 COCO 팀 </br>
 
 <img width="743" alt="스크린샷 2024-01-31 오후 4 48 29" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/2fea35f8-172a-46b4-bfbc-eea20d9ce966">
+<br/>
 
 ## 🕒 개발 기간
 
 2024.01.11 - 2024.01.29
-
+<br/>
 ## 🧑🏻‍💻 팀원 소개 및 R&R
 
 <img width="883" alt="스크린샷 2024-01-31 오후 2 17 31" src="https://github.com/hariqueen/Llama2-python-chat/assets/62236700/a41cfec6-6883-495f-b491-1eefcf81fe9d">
@@ -21,6 +22,7 @@
 사용자가 느끼는 불편함을 해소하고 교육 플랫폼 시장에서 경쟁력을 강화하고자 파이썬 기초 AI 챗봇을 개발하였습니다. </br>
 '코알라'는 '코드를 알려주는 라마(Code-Assisting LLaMA)'의 줄임말로, 사용자들이 파이썬 기초에 대해 궁금한 점을 쉽고 빠르게 해결할 수 있도록 도와줍니다.
 이를 통해 플랫폼 사용자 경험을 풍부하게 하고 교육 콘텐츠의 질을 높이는 데 목표를 두고 있습니다. </br>
+<br/>
 
 ## 🛠️ 기능
 
@@ -29,7 +31,7 @@ KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정
 1. 사용자의 질문이 파이썬과 연관된 것인지를 KoBERT 모델이 판단합니다.
 2. 파이썬과 무관한 질문이면 예외 처리 답변 10개 중 랜덤으로 하나가 반환됩니다.
 3. 파이썬에 관한 질문이면 CodeLlama 모델을 이용하여 답변을 합니다.
-   <br/>
+<br/>
 
 ## ⚙️ 개발 환경
 
@@ -54,6 +56,7 @@ KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정
 ### ✔️데이터베이스
 
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<br/>
 
 ## ⚙️ 모델 파인튜닝 및 훈련 (Model Fine-tuning & training)
 
