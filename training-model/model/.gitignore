@@ -1,0 +1,29 @@
+# dotenv environment variables file
+.env
+
+# CSV files
+*.csv
+
+# Compiled Python files
+__pycache__/
+
+# Dataset directory
+dataset/
+
+# MP3 files directory
+mp3_file/
+
+# macOS system files
+.DS_Store
+
+# Visual Studio Code directory
+.vscode/
+
+# Jupyter Notebooks
+*.ipynb
+
+# PyTorch model files
+*.pth
+
+# Any files starting with 'test'
+test*
