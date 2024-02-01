@@ -1,8 +1,0 @@
-streamlit
-transformers
-bitsandbytes
-peft
-mysql
-datetime
-kobert_tokenizer
-random
