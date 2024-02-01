@@ -37,6 +37,8 @@ KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정
 <img src="https://img.shields.io/badge/Hugging Face-yellow?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 ### ✔️운영체제
 <img src="https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=Ubuntu&logoColor=#E95420"> <img src="https://img.shields.io/badge/windows 11-0078D4?style=for-the-badge&logo=windows11&logoColor=#0078D4"> 
+## ⚙️데이터베이스
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
 ## ⚙️모델 파인튜닝 및 훈련 (Model Fine-tuning & training)
 ### ✔️Code Llama 모델
 `Code Llama (TinyPixel/CodeLlama-7B-Python-bf16-sharded)`
@@ -44,8 +46,7 @@ KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정
 `Kobert (SKT/KoBERT-base-v1)`
 ### ✔️라이브러리
 `Hugging Face Transformers`, `Tokenizer`, `autotrain-advanced`
-## ⚙️데이터베이스
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
+
 
  
 <br/>
