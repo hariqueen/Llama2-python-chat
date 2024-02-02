@@ -3,13 +3,14 @@ from db.connector import DBconnector
 from settings import DB_SETTINGS
 from mysql.connector import Error
 
-# 질문, 답변 외에 DB에 넣을 데이터
-x = dt.datetime.now()
-date = x.strftime("%Y-%m-%d")
-time = x.strftime("%H:%M:%S")
-
 # DB 연결 후 데이터 저장
 def insert_data(user_input, response):
+
+    # 질문, 답변 외에 DB에 넣을 데이터
+    x = dt.datetime.now()
+    date = x.strftime("%Y-%m-%d")
+    time = x.strftime("%H:%M:%S")
+    
     try:
         # DB 연결
         with DBconnector(**DB_SETTINGS['MYSQL']) as sql:
