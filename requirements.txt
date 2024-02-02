@@ -1,8 +1,8 @@
-streamlit
-transformers
-bitsandbytes
-peft
-mysql
-datetime
-kobert_tokenizer
-random
+streamlit==1.30.0
+transformers==4.36.1
+torch==2.1.2
+mysql-connector-python==8.3.0
+python-dotenv==1.0.1
+kobert-tokenizer @ git+https://github.com/SKTBrain/KoBERT.git@47a69af87928fc24e20f571fe10c3cc9dd9af9a3#subdirectory=kobert_hf
+kobert-transformers==0.5.1
+peft==0.7.1
