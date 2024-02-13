@@ -60,6 +60,6 @@ KoBERT 모델과 CodeLlama 모델을 적용하여 챗봇의 답변 반환 과정
 
 ## 🎬 실행 화면 (썸네일 클릭 시 영상 재생)
 
-[![Video Label](https://www.youtube.com/watch?v=rJzrXX2XMNQ&t=6s)
+[![Video Label](https://www.youtube.com/watch?v=rJzrXX2XMNQ&t=11s)
 <br/>
 
